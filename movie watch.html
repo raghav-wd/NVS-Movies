@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Watch</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .colorScheme {
+            background-color: white;
+            color: black;
+        }
+
+        .mf-dark-text {
+            color: #212121;
+            font-weight: 700;
+        }
+        .mf-bgvid {
+        width: 100%;
+        height: 85vh;
+        }
+        .mf-more{
+            position: absolute;
+            top: 85px;
+            right: 40px;
+        }
+        .overlay-movies{
+            position: absolute;
+            top: 60px;
+            right: 0;
+            width: 20%;
+            background-color: rgba(255, 255, 255, 0.4);
+            padding: 12px;
+            height: 85vh;
+            overflow-y: scroll;
+            transition: 0.5s all;
+        }
+        .movie-featured{
+            width: 270px;
+            height: 100px;
+            background-color: rgba(255, 255, 255, 0.7);
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .card-image{
+            width: 130px;
+            height: 80px;
+        }
+        .username{
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .comment{
+            padding-left: 8px;
+            margin-top: 8px;
+        }
+        .material-icons{
+            display: inline-block;
+            transition: 0.4s all;
+        }
+        .material-icons:hover{
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="mf-navbar colorScheme">
+        <div class="nav-wrappert">
+            <a href="index.html" class="brand-logo center"><span class="mf-dark-text"
+                    style="font-size: 38px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                    sans-serif;">NVS MOVIES</span></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <!-- <li><a href="sass.html" class="mf-dark-text">Sass</a></li> -->
+                <!-- <li><a href="badges.html" class="mf-dark-text">Components</a></li> -->
+                <li><a href="signup.html" class="mf-dark-text">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col l12">
+            <video class="mf-bgvid" muted autoplay controls width="100%">
+                <source src="A_Ride_through_the_MCU_Action_Vol.3(1080p).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="mf-more" onmouseleave="this.style.display='none'" onmouseenter="showOverlay()" style="color: black; text-align: center; padding: 2px;width: 25px; height: 25px; background-color: white; border-radius: 50%;">
+                i
+            </div>
+            <div class="overlay-movies" onmouseover="" onmouseleave="fadeaway()">
+                <div class="card horizontal movie-featured">
+                    <div class="card-image">
+                        <img src="thumbnails/images (1).jpeg" width="100%">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="" style="padding: 6px; font-size: 12px;">
+                            <span>I want to eat your Pancreas</span><br/>
+                            <span>3:42</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card horizontal movie-featured">
+                    <div class="card-image">
+                        <img src="thumbnails/images (19).jpeg" width="100%">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="" style="padding: 6px; font-size: 12px;">
+                            <span>I want to eat your Pancreas</span><br/>
+                            <span>3:42</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card horizontal movie-featured">
+                    <div class="card-image">
+                        <img src="thumbnails/images (18).jpeg" width="100%">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="" style="padding: 6px; font-size: 12px;">
+                            <span>I want to eat your Pancreas</span><br/>
+                            <span>3:42</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card horizontal movie-featured">
+                    <div class="card-image">
+                        <img src="thumbnails/images (17).jpeg" width="100%">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="" style="padding: 6px; font-size: 12px;">
+                            <span>I want to eat your Pancreas</span><br/>
+                            <span>3:42</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card horizontal movie-featured">
+                    <div class="card-image">
+                        <img src="thumbnails/images (16).jpeg" width="100%">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="" style="padding: 6px; font-size: 12px;">
+                            <span>I want to eat your Pancreas</span><br/>
+                            <span>3:42</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card horizontal movie-featured">
+                    <div class="card-image">
+                        <img src="thumbnails/images (15).jpeg" width="100%">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="" style="padding: 6px; font-size: 12px;">
+                            <span>I want to eat your Pancreas</span><br/>
+                            <span>3:42</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card horizontal movie-featured">
+                    <div class="card-image">
+                        <img src="thumbnails/images (14).jpeg" width="100%">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="" style="padding: 6px; font-size: 12px;">
+                            <span>I want to eat your Pancreas</span><br/>
+                            <span>3:42</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <span class="mf-dark-text" style="font-size: 24px;">Kinetic Manifesto Film 'ON'</span>
+            <div class="right" style="margin: 8px 368px 0 8px;">
+                <i class="material-icons"
+                    style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">thumb_up</i>
+                <i class="material-icons"
+                    style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">thumb_down</i>
+                <i class="material-icons"
+                    style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">message</i>
+            </div c>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col l12 card" style="padding: 16px;">
+            <span class="mf-dark-text" style="font-size: 24px;">Comments</span>
+            <br/>
+            <br/>
+            <div class="divider"></div>
+            <br/>
+            <div>
+                <div class="username"><i class="material-icons" style="transform: translateY(5px); padding: 3px">person_pin</i>Vaibhav01</div>
+                <div class="comment">Wow this is absolutely mind blowing!!!</div>
+                <div style="margin: 8px 0 0 8px;">
+                    <i class="material-icons" style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">thumb_up</i>
+                    <i class="material-icons" style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">thumb_down</i>
+                    <i class="material-icons" style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">message</i>
+                </div>
+            </div>
+            <br />
+            <div class="divider"></div>
+            <br />
+            <div>
+                <div class="username"><i class="material-icons"
+                        style="transform: translateY(5px); padding: 3px">person_pin</i>Rahul07</div>
+                <div class="comment">So cool bruh</div>
+                <div style="margin: 8px 0 0 8px;">
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">thumb_up</i>
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">thumb_down</i>
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">message</i>
+                </div>
+            </div>
+            <br />
+            <div class="divider"></div>
+            <br />
+            <div>
+                <div class="username"><i class="material-icons"
+                        style="transform: translateY(5px); padding: 3px">person_pin</i>UrCrush</div>
+                <div class="comment">I hate you</div>
+                <div style="margin: 8px 0 0 8px;">
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">thumb_up</i>
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">thumb_down</i>
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">message</i>
+                </div>
+            </div>
+            <br />
+            <div class="divider"></div>
+            <br />
+            <div>
+                <div class="username"><i class="material-icons"
+                        style="transform: translateY(5px); padding: 3px">person_pin</i>John Cena</div>
+                <div class="comment">Cena Cena Cena meri ___</div>
+                <div style="margin: 8px 0 0 8px;">
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">thumb_up</i>
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">thumb_down</i>
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">message</i>
+                </div>
+            </div>
+            <br />
+            <div class="divider"></div>
+            <br />
+            <div>
+                <div class="username"><i class="material-icons"
+                        style="transform: translateY(5px); padding: 3px">person_pin</i>Light</div>
+                <div class="comment">I must write your name</div>
+                <div style="margin: 8px 0 0 8px;">
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">thumb_up</i>
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">thumb_down</i>
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">message</i>
+                </div>
+            </div>
+            <br />
+            <div class="divider"></div>
+            <br />
+            <div>
+                <div class="username"><i class="material-icons"
+                        style="transform: translateY(5px); padding: 3px">person_pin</i>Kakashi</div>
+                <div class="comment">Sharinghan!!!</div>
+                <div style="margin: 8px 0 0 8px;">
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">thumb_up</i>
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">thumb_down</i>
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">message</i>
+                </div>
+            </div>
+            <br />
+            <div class="divider"></div>
+            <br />
+            <div>
+                <div class="username"><i class="material-icons"
+                        style="transform: translateY(5px); padding: 3px">person_pin</i>Vaibhav01</div>
+                <div class="comment">Wow this is absolutely mind blowing!!!</div>
+                <div style="margin: 8px 0 0 8px;">
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">thumb_up</i>
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">thumb_down</i>
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">message</i>
+                </div>
+            </div>
+            <br />
+            <div class="divider"></div>
+            <br />
+            <div>
+                <div class="username"><i class="material-icons"
+                        style="transform: translateY(5px); padding: 3px">person_pin</i>Vaibhav01</div>
+                <div class="comment">Wow this is absolutely mind blowing!!!</div>
+                <div style="margin: 8px 0 0 8px;">
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">thumb_up</i>
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">thumb_down</i>
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">message</i>
+                </div>
+            </div>
+            <br />
+            <div class="divider"></div>
+            <br />
+            <div>
+                <div class="username"><i class="material-icons"
+                        style="transform: translateY(5px); padding: 3px">person_pin</i>Vaibhav01</div>
+                <div class="comment">Wow this is absolutely mind blowing!!!</div>
+                <div style="margin: 8px 0 0 8px;">
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">thumb_up</i>
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">thumb_down</i>
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">message</i>
+                </div>
+            </div>
+            <br />
+            <div class="divider"></div>
+            <br />
+            <div>
+                <div class="username"><i class="material-icons"
+                        style="transform: translateY(5px); padding: 3px">person_pin</i>Vaibhav01</div>
+                <div class="comment">Wow this is absolutely mind blowing!!!</div>
+                <div style="margin: 8px 0 0 8px;">
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">thumb_up</i>
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">thumb_down</i>
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">message</i>
+                </div>
+            </div>
+            <br />
+            <div class="divider"></div>
+            <br />
+            <div>
+                <div class="username"><i class="material-icons"
+                        style="transform: translateY(5px); padding: 3px">person_pin</i>Vaibhav01</div>
+                <div class="comment">Wow this is absolutely mind blowing!!!</div>
+                <div style="margin: 8px 0 0 8px;">
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">thumb_up</i>
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">thumb_down</i>
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">message</i>
+                </div>
+            </div>
+            <br />
+            <div class="divider"></div>
+            <br />
+            <div>
+                <div class="username"><i class="material-icons"
+                        style="transform: translateY(5px); padding: 3px">person_pin</i>Vaibhav01</div>
+                <div class="comment">Wow this is absolutely mind blowing!!!</div>
+                <div style="margin: 8px 0 0 8px;">
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">thumb_up</i>
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">thumb_down</i>
+                    <i class="material-icons"
+                        style="margin-right: 10px;color: #212121; font-size: 18px; cursor: pointer">message</i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer grey darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Questions? Call 000-800-040-1843</h5>
+                    <p class="grey-text text-lighten-4">NVS MOVIES is the home of amazing original programming that you
+                        can’t find anywhere else. Movies, TV shows, specials and more, it’s all tailored
+                        specifically to you.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">FAQ</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Privacy</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Help Center</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Account</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                ©NVS MOVIES 2020 Copyright
+                <a class="grey-text text-lighten-4 right" href="#!">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        movieList = document.getElementsByClassName("overlay-movies")[0];
+        more = document.getElementsByClassName("mf-more")[0];
+        function fadeaway(){
+            movieList.style.opacity = "0";
+            window.setTimeout(function(){
+            movieList.style.display = "none";
+            more.style.display = "inline-block";
+            }, 500)
+        }
+        function showOverlay(){
+            movieList.style.opacity = "1";
+            movieList.style.display = "inline-block";
+        }
+    </script>
+</body>
+</html>

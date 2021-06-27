@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>NVS MOVIES</title>
+    <style>
+        body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        }
+
+        main {
+        flex: 1 0 auto;
+        }
+
+        .colorScheme{
+            background-color: white;
+            color: black;
+        }
+
+        .zero{
+            padding: 0;
+            margin: 0;
+        }
+        .mf-slider{
+            position: relative;
+            text-align: center;
+        }
+
+        .mf-slider .mf-overlay {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            position: absolute;
+            background-color: #212121;
+            opacity: 0.4;   
+        }
+
+        .mf-slider .mf-overlay-text:hover {
+            font-size: 62epx;
+        }
+
+        .mf-slider{
+            /* height: 90vh; */
+        }
+
+        .mf-slider .mf-overlay-text {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            color: white;
+            font-weight: 700;;
+            font-size: 52px;
+            transition: 0.5s all;
+        }
+
+        .mf-bgvid {
+            width: 100%;
+            /* height: 100%; */
+        }
+
+        .mf-dark-text {
+            color: #212121;
+            font-weight: 700;
+        }
+        .mf-home-feature {
+            background-color: white;
+            width: 100%;
+            height: 550px;
+        }
+        .mf-home-feature{
+            color: #212121;
+            position: relative;
+        }
+        .mf-home-feature div{
+            position: absolute;
+            top: 50%;
+            font-size: 42px;
+            font-family: fantasy;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .mf-home-feature .mf-left{
+            left: 25%;
+        }
+        .mf-home-feature .mf-right{
+            left: 75%;
+        }
+        /* The device with borders */
+        .smartphone {
+        position: relative;
+        width: 180px;
+        height: 340px;
+        margin: auto;
+        border: 10px black solid;
+        border-top-width: 60px;
+        border-bottom-width: 60px;
+        border-radius: 36px;
+        }
+
+        /* The horizontal line on the top of the device */
+        .smartphone:before {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 5px;
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #333;
+        border-radius: 10px;
+        }
+
+        /* The circle on the bottom of the device */
+        .smartphone:after {
+        content: '';
+        display: block;
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        left: 50%;
+        bottom: -65px;
+        transform: translate(-50%, -50%);
+        background: #333;
+        border-radius: 50%;
+        }
+
+        .smartphone .content{
+            /* overflow-y: hidden; */
+        }
+
+        /* The screen (or content) of the device */
+        .smartphone .content img{
+        width: 165px;
+        /* height: 400px; */
+        background: white;
+        transform: translate(79px, 0);
+        }
+        .divider{
+            height: 4px;
+        }
+        .sub-info{
+            font-size: 18px;
+            display: block;
+            text-align: center;
+        }
+        hr{
+            border: 1px solid red;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <nav class="mf-navbar colorScheme">
+            <div class="nav-wrappert">
+                <a href="index.html" class="brand-logo center"><span class="mf-dark-text" style="font-size: 38px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">NVS MOVIES</span></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <!-- <li><a href="sass.html" class="mf-dark-text">Sass</a></li> -->
+                    <!-- <li><a href="badges.html" class="mf-dark-text">Components</a></li> -->
+                    <li><a href="signup.html" class="mf-dark-text">Sign Up</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="mf-slider">
+            <video class="mf-bgvid" muted autoplay>
+                <source src="A_Ride_through_the_MCU_Action_Vol.3(1080p).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="mf-overlay"></div>
+            <div class="mf-overlay-text">
+                <a href="movieGallery.html" class="white-text">Unlimited movies,<br/>TV shows and more.</a>
+            </div>
+        </div>
+        <div class="mf-home-feature">
+            <div class="mf-left">
+                Download your shows<br/>to watch on the go.
+                <hr>
+                <span class="sub-info">Save your data and watch all your favourites offline.</span>
+            </div>
+            <div class="mf-right">
+                <div class="smartphone">
+                    <div class="content">
+                        <!-- <iframe src="" style="width:100%;border:none;height:100%"> -->
+                        <img src="thumbnails/images-w1400.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="mf-home-feature">
+            <div class="mf-left">
+                <div class="border" style="border: 4px solid #212121;">
+                    <img src="fmovies.jpg" alt="">
+                </div>
+                <div class="stand" style="width: 70px; height: 10px; background-color: #212121; transform: translate(-50%, 160px);">
+
+                </div>
+            </div>
+            <div class="mf-right">
+                Stream and Upload<br/>movie anytime.
+                <hr>
+                <span class="sub-info">Stream/Upload unlimited movies and TV shows.</span>
+            </div>
+        </div>
+        <footer class="page-footer grey darken-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Questions? Call 000-800-040-1843</h5>
+                        <p class="grey-text text-lighten-4">NVS MOVIES is the home of amazing original programming that
+                            you
+                            can’t find anywhere else. Movies, TV shows, specials and more, it’s all tailored
+                            specifically to you.</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Links</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="#!">FAQ</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Privacy</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Help Center</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Account</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-copyright">
+                <div class="container">
+                    ©NVS MOVIES 2020 Copyright
+                    <a class="grey-text text-lighten-4 right" href="#!">Contact Us</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script>
+        // document.getElementsByClassName("mf-navbar")[0].
+    </script>
+</body>
+</html>

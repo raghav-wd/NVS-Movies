@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Gallery</title>
+    <style>
+        .mf-movie-slider {
+            width: 100%;
+            float: left;
+            background-color: #212121;
+            overflow-x: scroll;
+        }
+        .mf-movie-slider-strip {
+            width: 2550px;
+            background-color: rgb(255, 255, 255);
+            padding: 14px;
+        }
+        .mf-movie-thumbnail{
+            width: 150px;
+            height: 150px;
+            margin: 0 16px 0 16px;
+            display: inline-block;
+        }
+        /* width */
+        ::-webkit-scrollbar {
+        width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+        background: rgb(66, 66, 66);
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+        background: #181811;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+        }
+
+        .mf-movie-slider-head{
+            background-color: #212121;
+            color: white;
+            font-size: 32px;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+        .card-image img {
+            width: 100%;
+            /* height:  */
+        }
+        .colorScheme {
+        background-color: #fff;
+        color: white;
+        }
+
+        .mf-dark-text {
+        color: #212121;
+        font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <nav class="mf-navbar colorScheme">
+        <div class="nav-wrappert">
+            <a href="index.html" class="brand-logo center"><span class="mf-dark-text"
+                    style="font-size: 38px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                    sans-serif;">NVS MOVIES</span></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <!-- <li><a href="sass.html" class="mf-dark-text">Sass</a></li> -->
+                <!-- <li><a href="badges.html" class="mf-dark-text">Components</a></li> -->
+                <li><a href="signup.html" class="mf-dark-text">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="mf-movie-slider-head" style="padding: 8px;">
+        <span>Action/Thrill</span>
+    </div>
+    <div class="mf-movie-slider">
+        <div class="mf-movie-slider-strip">
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (1).jpeg" width="1000px">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (2).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (3).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (4).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (5).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (6).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (7).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (8).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (9).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (10).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (1).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (5).jpeg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mf-movie-slider-head" style="padding: 8px;">
+        <span>Top Movies</span>
+    </div>
+    <div class="mf-movie-slider">
+        <div class="mf-movie-slider-strip">
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (17).jpeg" width="1000px">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (18).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (19).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (23).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (5).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (6).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (7).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (8).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (9).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (10).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (11).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (12).jpeg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mf-movie-slider-head" style="padding: 8px;">
+        <span>Romance Movies</span>
+    </div>
+    <div class="mf-movie-slider">
+        <div class="mf-movie-slider-strip">
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (13).jpeg" width="1000px">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (14).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (15).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (16).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (17).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (18).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (19).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (20).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (21).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (22).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (23).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (24).jpeg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mf-movie-slider-head" style="padding: 8px;">
+        <span>Sci-Fi Movies</span>
+    </div>
+    <div class="mf-movie-slider">
+        <div class="mf-movie-slider-strip">
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (17).jpeg" width="1000px">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (18).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (22).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (3).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (19).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (6).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (20).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (8).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (9).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (10).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (1).jpeg">
+                </div>
+            </div>
+            <div class="card mf-movie-thumbnail">
+                <div class="card-image" onclick="moviewatch()">
+                    <img src="thumbnails/images (5).jpeg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer grey darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Questions? Call 000-800-040-1843</h5>
+                    <p class="grey-text text-lighten-4">NVS MOVIES is the home of amazing original programming that you
+                        can’t find anywhere else. Movies, TV shows, specials and more, it’s all tailored
+                        specifically to you.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">FAQ</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Privacy</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Help Center</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Account</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                ©NVS MOVIES 2020 Copyright
+                <a class="grey-text text-lighten-4 right" href="#!">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function moviewatch(){
+            window.location.href = "movie watch.html";
+        }
+    </script>
+</body>
+</html>
